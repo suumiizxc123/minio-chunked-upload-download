@@ -1,14 +1,13 @@
-version: "3.9"
-
 services:
   app:
     image: danielcavalcante/minio-chunked-upload-download
     build:
+      context: .
       dockerfile: Dockerfile
     container_name: flask-app-prod
     restart: unless-stopped
     ports:
-      - 80:5000
+      - 127.0.0.1:8080:5000
     networks:
       - minio_chunked_network
     environment:
