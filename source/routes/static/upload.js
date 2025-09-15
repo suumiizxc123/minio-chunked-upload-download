@@ -1,6 +1,6 @@
 // constants and the global variables
 const CHUNK_SIZE = 5 * 1024 * 1024;
-const UPLOAD_URL = "http://localhost:5000/minio/upload";
+const UPLOAD_URL = "/minio/upload";
 let file;
 
 // code that handles user selecting a file
